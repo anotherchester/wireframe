@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Quiz Application</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <main class="container">
+
+        <header>
+        </header>
+        <div class="intro-view">
+            <h1>Godzilla Quiz</h1>
+            <button type="button">Start</button>
+        </div>
+
+        <div class="question-view">
+            <ul>
+                <li>Question:
+                    <span>0</span>/7
+                </li>
+                <li> Score:
+                    <span>0</span>
+                </li>
+            </ul>
+            <h2> When the first Godzilla movie was released? </h2>
+            <form name="question">
+                <input type="radio" name="answer" />1949
+                <br />
+                <input type="radio" name="answer" />1954
+                <br />
+                <input type="radio" name="answer" />1962
+                <br />
+                <input type="radio" name="answer" />1970
+                <br />
+            </form>
+            <button type="button"> Submit </button>
+        </div>
+
+        <div class="feedback-view">
+            <ul>
+                <li>Question:
+                    <span>0</span>/7
+                </li>
+                <li> Score:
+                    <span>0</span>
+                </li>
+            </ul>
+            <h2> When the first Godzilla movie was released? </h2>
+            <form name="question">
+                <input type="radio" name="answer" />1949
+                <br />
+                <div>Incorrect Answer</div>
+                <input type="radio" name="answer" />1954
+                <br />
+                <div>Correct Answer</div>
+                <input type="radio" name="answer" />1962
+                <br />
+                <input type="radio" name="answer" />1970
+                <br />
+            </form>
+            <button type="button">Next</button>
+        </div>
+        <div class="results-view">
+            <h2> Score: 4/7 </h2>
+            <button type="button">Restart</button>
+        </div>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
+
+<!-- Intro View - shows just welcome message and start button
+Question View - displays question, list of selectable answers
+Feedback View - displays feedback (including the correct answer if the user was incorrect) and next button
+Results View - shows quiz score and replay button -->
